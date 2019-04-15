@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddebc9371fa804645b74cd42ba82a022, type: 3}
+  m_Name: GameLogicEngine
+  m_EditorClassIdentifier: 
+  GameStartEvent: {fileID: 11400000, guid: 2cc278d7ebe47254eadeb3c02296ad10, type: 2}
+  GameEndEvent: {fileID: 11400000, guid: 7849c9e0cf3b1c445b504b686678c583, type: 2}

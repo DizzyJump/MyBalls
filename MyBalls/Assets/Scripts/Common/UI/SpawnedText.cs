@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class SpawnedText : MonoBehaviour
 {
-    public TextMeshProUGUI msg;
+    /*public TextMeshProUGUI msg;
     RectTransform msg_rect;
     public TextMeshProUGUI prefix;
     public TextMeshProUGUI postfix;
@@ -52,5 +52,5 @@ public class SpawnedText : MonoBehaviour
     {
         gameObject.SetActive(false);
         _parent.OnFreeText(prefab_id, this);
-    }
+    }*/
 }
