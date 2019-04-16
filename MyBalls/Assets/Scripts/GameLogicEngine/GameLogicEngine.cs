@@ -28,6 +28,12 @@ public class GameLogicEngine : ScriptableObject, IGameLogicAPI
         return _Objects[objectID].CurrentHP;
     }
 
+    public float GetObjectHPPercent(int objectID)
+    {
+        var WorkObject = _Objects[objectID];
+        return (float)WorkObject.CurrentHP / (float)WorkObject.StartHP;
+    }
+
     public float GetObjectScale(int objectID)
     {
         bool isAlive = isObjectAlive(objectID);

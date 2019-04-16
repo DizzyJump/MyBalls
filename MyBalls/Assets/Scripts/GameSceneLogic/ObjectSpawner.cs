@@ -11,9 +11,16 @@ public class ObjectSpawner : ScriptableObject
     [SerializeField]
     LevelConfigValue OnGameStart;
 
+    [SerializeField]
+    EventObject OnGameEnd;
+
+    List<ObjectController> _Objects = new List<ObjectController>();
+
     private void OnEnable()
     {
+        _Objects.Clear();
         OnGameStart.AddHandler(OnGameStartHandler);
+        OnGameEnd.AddHandler(OnGameEndHandler);
     }
 
     void OnGameStartHandler()
@@ -24,11 +31,23 @@ public class ObjectSpawner : ScriptableObject
         {
             var obj = Instantiate(levelConfig.ObjectPrefab, levelConfig.ObjectSpawnOffset * i, Quaternion.identity);
             obj.Setup(i);
+            _Objects.Add(obj);
         }
+    }
+
+    void OnGameEndHandler()
+    {
+        foreach(var obj in _Objects)
+        {
+            Destroy(obj.gameObject);
+        }
+        _Objects.Clear();
     }
 
     private void OnDisable()
     {
         OnGameStart.RemoveHandler(OnGameStartHandler);
+        OnGameEnd.RemoveHandler(OnGameEndHandler);
+        _Objects.Clear();
     }
 }

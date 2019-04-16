@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Engine: {fileID: 11400000, guid: 6773b4abc6d8e1346b1c415f17670fcf, type: 2}
   OnGameStart: {fileID: 11400000, guid: 2cc278d7ebe47254eadeb3c02296ad10, type: 2}
+  OnGameEnd: {fileID: 11400000, guid: 7849c9e0cf3b1c445b504b686678c583, type: 2}
