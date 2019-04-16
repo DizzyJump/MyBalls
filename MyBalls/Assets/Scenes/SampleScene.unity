@@ -660,6 +660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Engine: {fileID: 11400000, guid: 6773b4abc6d8e1346b1c415f17670fcf, type: 2}
+  _Spawner: {fileID: 11400000, guid: 3a9ee38eea6739e43878b950953c1b89, type: 2}
   _LevelConfig: {fileID: 11400000, guid: dc41d54a7c80ae641b0bd06ba3a635be, type: 2}
 --- !u!4 &1764027157
 Transform:

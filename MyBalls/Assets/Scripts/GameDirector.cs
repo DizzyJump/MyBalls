@@ -8,6 +8,9 @@ public class GameDirector : MonoBehaviour
     GameLogicEngine _Engine;
 
     [SerializeField]
+    ObjectSpawner _Spawner;
+
+    [SerializeField]
     LevelConfig _LevelConfig;
 
     // Start is called before the first frame update
